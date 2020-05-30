@@ -29,7 +29,7 @@ function change_grid_colour(){
     p.forEach((div) => {
 
         div.addEventListener('mouseenter', (e) => {
-            e.target.style.backgroundColor="purple"
+            e.target.style.backgroundColor="green"
     })
     })
 }
@@ -47,6 +47,11 @@ function reset_grid(){
     }
     
     input = window.prompt("What size do you want to the grid to be?")
+    
+    if (input == null | input == ""){
+        input = 16
+    }
+    console.log(input)
     makeRows(input, input)
 
     change_grid_colour()
