@@ -2,6 +2,7 @@ size = 3
 
 // Make a 16*16 grid
 
+
 function makeRows(rows, cols){
 
     const container = document.getElementById("container");
@@ -10,7 +11,7 @@ function makeRows(rows, cols){
 
     for (let i =0; i<(rows*cols); i++){
         let cell = document.createElement("div")
-        cell.textContent = i
+        //cell.textContent = i
         cell.setAttribute('id',i)
         container.appendChild(cell).className = "grid-item"
 }
@@ -22,15 +23,8 @@ makeRows(size,size)
 
 function change_grid_colour(){
 
-    let divs = document.querySelectorAll('div');
     let grid = document.getElementsByClassName("grid-item");
-
     let p = Array.from(grid)
-
-    // console.log(p)
-    // console.log(grid)
-    // console.log(divs)
-
 
     p.forEach((div) => {
 
