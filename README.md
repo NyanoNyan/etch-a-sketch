@@ -5,4 +5,4 @@
 - User can draw on the box by hovering over the mouse
 - To clear the screen and change the size of the grid, user will need to select the "Clear" button.
 
-- <a href="main.html">Link to project</a>
+- <a href="https://nyanonyan.github.io/etch-a-sketch/main.html">Link to project</a>
